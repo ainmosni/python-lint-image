@@ -1,14 +1,14 @@
-FROM python:3.8.0-alpine3.10
+FROM python:3.10-alpine
 
-LABEL maintainer="ricardobchaves6@gmail.com"
+LABEL maintainer="ainmosni@ams-sec.org"
 
 RUN apk add --no-cache \
     gcc \
     musl-dev && \
     pip install pylint==2.7.4 \
     pylint_django==2.4.3 \
-    pycodestyle==2.7.0 \
-    flake8==3.9.1 \
-    black==20.8b1 \
+    pycodestyle==2.8.0 \
+    flake8==4.0.1 \
+    black==21.12b0 \
     mypy==0.812 \
-    isort==5.8.0
+    isort==5.10.1
